@@ -6,8 +6,10 @@ import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import CVBuilderPage from "./pages/CVBuilderPage";
 import Layout from "./components/layout/Layout";
+import ResumePage from "./pages/ResumePage";
+import CoverLetterPage from "./pages/CoverLetterPage";
+import FAQPage from "./pages/FAQPage";
 
 const router = createBrowserRouter([
   {
@@ -36,10 +38,26 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/cv-builder",
+    path: "/resume",
     element: (
       <Layout>
-        <CVBuilderPage />
+        <ResumePage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/cover-letter",
+    element: (
+      <Layout>
+        <CoverLetterPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/faq",
+    element: (
+      <Layout>
+        <FAQPage />
       </Layout>
     ),
   },

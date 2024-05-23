@@ -1,21 +1,21 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-import PrimaryButton from "../common/PrimaryButton";
+import logo from "../../assets/logo.svg";
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <h1>
-        <Link to="/">Logo</Link>
-      </h1>
+      <Link to="/">
+        <Logo src={logo} alt="CV Builder Logo" />
+      </Link>
       <NavigationContainer>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/cv-builder">CV Builder</StyledLink>
+        <StyledLink to="/resume">Resume</StyledLink>
+        <StyledLink to="/cover-letter">Cover Letter</StyledLink>
+        <StyledLink to="/blog">Blog</StyledLink>
+        <StyledLink to="/faq">FAQ</StyledLink>
         <NavBarSeparator />
         <SignInLink to="/login">Log In</SignInLink>
-        <PrimaryButton>
-          <SignUpLink to="/register">Sign Up</SignUpLink>
-        </PrimaryButton>
+        <SignUpLink to="/register">Sign Up</SignUpLink>
       </NavigationContainer>
     </HeaderContainer>
   );
@@ -35,25 +35,44 @@ const NavigationContainer = styled.nav`
   align-items: center;
 `;
 
+const Logo = styled.img`
+  height: 60px;
+`;
+
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #1e2532;
+  font-size: 19px;
+  font-weight: 400;
+  padding: 0 16px;
+  :hover {
+    color: #1272d0;
+  }
 `;
 
 const SignUpLink = styled(Link)`
   text-decoration: none;
-  color: #1e2532;
-  background-color: #f0f0f0;
-  padding: 0.5rem 1rem;
+  padding: 14px 24px;
+  background-color: #1a91f0;
+  color: #ffffff;
   border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  :hover {
+    background-color: #1272d0;
+  }
 `;
 
 const SignInLink = styled(Link)`
   text-decoration: none;
-  color: #1e2532;
-  background-color: #f0f0f0;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  font-size: 19px;
+  margin-right: 24px;
+  color: #1a91f0;
+  background-color: #ffffff;
+  border-radius: 2px;
+  :hover {
+    color: #1272d0;
+  }
 `;
 
 const NavBarSeparator = styled.div`
