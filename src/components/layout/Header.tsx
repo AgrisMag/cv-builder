@@ -12,7 +12,7 @@ const Header = () => {
       <NavigationContainer>
         <StyledLink to="/resume">Resume</StyledLink>
         <StyledLink to="/cover-letter">Cover Letter</StyledLink>
-        <StyledLink to="/blog">Blog</StyledLink>
+        <StyledLink to="/#">Blog</StyledLink>
         <StyledLink to="/faq">FAQ</StyledLink>
         <NavBarSeparator />
         <SignInLink to="/login">Log In</SignInLink>
