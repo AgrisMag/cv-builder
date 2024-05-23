@@ -5,9 +5,10 @@ import logo from "../../assets/logo.svg";
 const Header = () => {
   return (
     <HeaderContainer>
-      <Link to="/">
+      <HomeNavigationLink to="/">
         <Logo src={logo} alt="CV Builder Logo" />
-      </Link>
+        <p>CV Builder</p>
+      </HomeNavigationLink>
       <NavigationContainer>
         <StyledLink to="/resume">Resume</StyledLink>
         <StyledLink to="/cover-letter">Cover Letter</StyledLink>
@@ -37,6 +38,17 @@ const NavigationContainer = styled.nav`
 
 const Logo = styled.img`
   height: 60px;
+  margin-right: 8px;
+`;
+
+const HomeNavigationLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1e2532;
+  font-size: 19px;
+  font-weight: 400;
+  padding: 0 16px;
 `;
 
 const StyledLink = styled(Link)`
