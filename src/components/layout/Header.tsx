@@ -54,7 +54,7 @@ const HomeNavigationLink = styled(Link)`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #1e2532;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
   padding: 0 16px;
   :hover {
@@ -69,7 +69,7 @@ const SignUpLink = styled(Link)`
   color: #ffffff;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   :hover {
     background-color: #1272d0;
   }
@@ -77,7 +77,7 @@ const SignUpLink = styled(Link)`
 
 const SignInLink = styled(Link)`
   text-decoration: none;
-  font-size: 19px;
+  font-size: 16px;
   margin-right: 24px;
   color: #1a91f0;
   background-color: #ffffff;
